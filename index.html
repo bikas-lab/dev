@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Become an International Astro Coach in 9 Weeks — Free Masterclass by Puneet Nahata</title>
+<meta name="description" content="A free live masterclass with Puneet Nahata — creator of Astro Profile, founder of the Astro Coach App. Learn Positive Astrology, conduct professional consultations, and build a financially rewarding international coaching career. 11 June, 7 PM IST. 100 seats only." />
+<meta property="og:title" content="Become an International Astro Coach in 9 Weeks — Free Live Masterclass" />
+<meta property="og:description" content="Learn Positive Astrology. Change Lives. Get Paid For It. Free masterclass with Puneet Nahata — 11 June, 7 PM IST." />
+<meta property="og:image" content="assets/puneet-hero.jpg" />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#0c1a2e" />
+<link rel="icon" href="assets/logo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0 }
+  :root{
+    --navy:#0c1a2e; --navy-2:#102542; --navy-3:#16314f;
+    --ink:#1d2b3a; --body:#43525f; --muted:#8493a1;
+    --paper:#fbf7ef; --paper-2:#f4ecdd; --card:#ffffff;
+    --line:rgba(20,40,65,.10); --line-2:rgba(20,40,65,.06);
+    --gold:#c9a24b; --gold-2:#e0c074; --gold-deep:#a67c2e;
+    --blue:#5a9bc4; --blue-deep:#3d7ba6; --green:#3f8f6e; --red:#c25a4d;
+    --shadow:0 24px 60px -32px rgba(12,26,46,.45);
+    --shadow-sm:0 10px 30px -18px rgba(12,26,46,.35);
+    --radius:18px;
+  }
+  html{ scroll-behavior:smooth }
+  body{ font-family:"Plus Jakarta Sans",ui-sans-serif,system-ui,sans-serif; color:var(--body); background:var(--paper);
+    -webkit-font-smoothing:antialiased; line-height:1.65; overflow-x:hidden }
+  h1,h2,h3,h4{ font-family:"Cormorant Garamond",Georgia,serif; color:var(--ink); line-height:1.1; font-weight:600 }
+  .wrap{ width:100%; max-width:1140px; margin:0 auto; padding:0 22px }
+  a{ color:inherit; text-decoration:none } img{ max-width:100%; display:block } section{ position:relative }
+
+  /* icons */
+  .ic{ width:1em; height:1em; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; flex:none }
+  .ic-fill{ fill:currentColor; stroke:none }
+
+  /* buttons */
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:.55rem; font-family:"Plus Jakarta Sans",sans-serif;
+    font-weight:700; font-size:1.02rem; padding:1.05rem 2.1rem; border-radius:999px; cursor:pointer; border:0; letter-spacing:.01em;
+    transition:transform .18s ease, box-shadow .25s ease, filter .2s ease; text-align:center }
+  .btn .ic{ font-size:1.15em }
+  .btn-gold{ color:#23170a; background:linear-gradient(135deg,var(--gold-2),var(--gold) 55%,var(--gold-deep));
+    box-shadow:0 16px 34px -14px rgba(166,124,46,.65), inset 0 1px 0 rgba(255,255,255,.5) }
+  .btn-gold:hover{ transform:translateY(-2px); box-shadow:0 22px 44px -14px rgba(166,124,46,.75), inset 0 1px 0 rgba(255,255,255,.55) }
+  .btn-light{ background:#fff; color:var(--navy); box-shadow:var(--shadow-sm) }
+  .btn-light:hover{ transform:translateY(-2px) }
+  .btn-block{ width:100% }
+  .btn-sub{ font-size:.82rem; color:var(--muted); margin-top:.85rem; letter-spacing:.04em }
+
+  .eyebrow{ display:inline-flex; align-items:center; gap:.5rem; font-family:"Plus Jakarta Sans",sans-serif; font-weight:700;
+    font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-deep) }
+  .eyebrow::before,.eyebrow.center::after{ content:""; width:26px; height:1px; background:var(--gold) }
+  .eyebrow.on-dark{ color:var(--gold-2) } .eyebrow.center{ justify-content:center }
+
+  .sec-pad{ padding:88px 0 } .sec-pad-sm{ padding:64px 0 }
+
+  /* top bar */
+  .topbar{ position:sticky; top:0; z-index:60; background:rgba(12,26,46,.86); backdrop-filter:blur(12px); border-bottom:1px solid rgba(201,162,75,.18) }
+  .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px }
+  .brand{ display:flex; align-items:center; gap:.6rem; color:#fff; font-family:"Cormorant Garamond",serif; font-size:1.5rem; font-weight:700 }
+  .brand .mark{ width:34px; height:34px; display:grid; place-items:center; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, var(--gold-2), var(--gold-deep)); color:#23170a;
+    box-shadow:0 0 0 1px rgba(201,162,75,.4), 0 0 22px rgba(201,162,75,.35) }
+  .brand .mark .ic{ font-size:1rem }
+  .topbar .btn{ padding:.62rem 1.3rem; font-size:.85rem }
+  .topbar .nav-meta{ display:none; color:#cdd8e4; font-size:.82rem }
+  @media(min-width:900px){ .topbar .nav-meta{ display:flex; gap:1.6rem; align-items:center } .topbar .nav-meta span{ display:flex; align-items:center; gap:.45rem } .topbar .nav-meta b{ color:#fff } .topbar .nav-meta .ic{ color:var(--gold-2); font-size:1rem } }
+
+  /* hero */
+  .hero{ position:relative; overflow:hidden; color:#eaf1f8; padding:54px 0 84px;
+    background:linear-gradient(180deg,var(--navy) 0%, var(--navy-2) 60%, #0e2138 100%) }
+  .hero .bg-zodiac{ position:absolute; inset:0; background:url('assets/zodiac-bg.jpg') center/cover no-repeat; opacity:.20; mix-blend-mode:screen; pointer-events:none }
+  .hero .glow{ position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(1100px 560px at 50% -8%, rgba(90,155,196,.22), transparent 60%), radial-gradient(820px 460px at 84% 16%, rgba(201,162,75,.18), transparent 55%) }
+  .stars{ position:absolute; inset:0; pointer-events:none }
+  .stars i{ position:absolute; background:#fff; border-radius:50%; animation:tw 4s ease-in-out infinite }
+  @keyframes tw{ 0%,100%{opacity:.2} 50%{opacity:1} }
+  .hero .wrap{ position:relative; z-index:2 }
+  .hero .top-flag{ text-align:center; margin-bottom:18px }
+  .flag{ display:inline-flex; align-items:center; gap:.55rem; font-weight:700; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--gold-2); border:1px solid rgba(201,162,75,.4); padding:.45rem 1.05rem; border-radius:999px; background:rgba(201,162,75,.08) }
+  .flag .ic{ font-size:.95rem }
+  .hero h1{ font-size:clamp(2.5rem,6vw,4.6rem); color:#fff; text-align:center; letter-spacing:-.01em; max-width:14ch; margin:0 auto }
+  .hero h1 em{ font-style:italic; color:var(--gold-2) }
+  .hero .lede{ text-align:center; max-width:60ch; margin:20px auto 0; font-size:clamp(1.05rem,2.2vw,1.25rem); color:#c4d2e0; font-weight:400 }
+  .hero .lede b{ color:#fff; font-weight:600 }
+  .byline{ display:flex; align-items:center; justify-content:center; gap:.7rem; margin-top:22px; color:#aebfd0; font-size:.95rem; flex-wrap:wrap }
+  .byline .pic{ width:40px; height:40px; border-radius:50%; object-fit:cover; object-position:72% 30%; border:1px solid rgba(201,162,75,.5) }
+  .byline b{ color:#fff } .byline .dot{ color:var(--gold) }
+
+  .hero-stats{ display:flex; flex-wrap:wrap; justify-content:center; gap:0; margin:30px auto 0; max-width:680px }
+  .hero-stats .st{ flex:1 1 0; min-width:130px; text-align:center; padding:6px 14px; position:relative }
+  .hero-stats .st + .st::before{ content:""; position:absolute; left:0; top:18%; height:64%; width:1px; background:rgba(255,255,255,.14) }
+  .hero-stats .num{ font-family:"Cormorant Garamond",serif; font-size:2.1rem; font-weight:700; color:var(--gold-2); line-height:1 }
+  .hero-stats .lbl{ font-size:.74rem; letter-spacing:.12em; text-transform:uppercase; color:#9fb1c4; margin-top:6px }
+  .hero-cta{ text-align:center; margin-top:34px }
+
+  .panel{ margin:44px auto 0; max-width:980px; background:rgba(255,255,255,.05); border:1px solid rgba(201,162,75,.22);
+    border-radius:22px; padding:26px 22px; backdrop-filter:blur(6px) }
+  .cd-title{ text-align:center; color:var(--gold-2); font-size:.74rem; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin-bottom:14px }
+  .countdown{ display:flex; justify-content:center; gap:14px; flex-wrap:wrap }
+  .cd-box{ min-width:78px; text-align:center }
+  .cd-box .v{ font-family:"Cormorant Garamond",serif; font-size:2.6rem; font-weight:700; color:#fff; line-height:1;
+    background:rgba(12,26,46,.5); border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:.45rem .2rem }
+  .cd-box .k{ font-size:.66rem; letter-spacing:.16em; text-transform:uppercase; color:#9fb1c4; margin-top:7px }
+
+  .detail-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; margin-top:22px; border:1px solid rgba(255,255,255,.1); border-radius:14px; overflow:hidden; background:rgba(255,255,255,.06) }
+  @media(min-width:760px){ .detail-grid{ grid-template-columns:repeat(4,1fr) } }
+  .detail{ background:rgba(12,26,46,.35); padding:18px 16px; text-align:center }
+  .detail .ic{ font-size:1.4rem; margin:0 auto 8px; color:var(--gold-2) }
+  .detail .dk{ font-size:.66rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-2); font-weight:700 }
+  .detail .dv{ color:#fff; font-weight:700; font-size:1.05rem; margin-top:5px }
+  .detail .ds{ color:#9fb1c4; font-size:.78rem; margin-top:2px }
+
+  .sec-head{ text-align:center; max-width:760px; margin:0 auto 46px }
+  .sec-head h2{ font-size:clamp(2rem,4.4vw,3.1rem); margin-top:12px }
+  .sec-head p{ margin-top:14px; color:var(--body); font-size:1.08rem }
+  .sec-head.on-dark h2{ color:#fff } .sec-head.on-dark p{ color:#c4d2e0 }
+
+  .band-paper{ background:var(--paper) }
+  .band-sand{ background:linear-gradient(180deg,var(--paper-2),#f7efe2) }
+  .band-navy{ background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%); color:#dce7f2 }
+  .band-navy h3{ color:#fff }
+
+  .learn-grid{ display:grid; grid-template-columns:1fr; gap:14px }
+  @media(min-width:680px){ .learn-grid{ grid-template-columns:1fr 1fr } }
+  .learn-item{ display:flex; gap:14px; align-items:flex-start; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 18px; box-shadow:var(--shadow-sm) }
+  .learn-item .ck{ flex:none; width:30px; height:30px; border-radius:50%; display:grid; place-items:center;
+    background:linear-gradient(135deg,var(--gold-2),var(--gold-deep)); color:#fff; margin-top:2px }
+  .learn-item .ck .ic{ font-size:.95rem; stroke-width:2.4 }
+  .learn-item p{ color:var(--ink); font-weight:600; font-size:1rem; line-height:1.45 }
+
+  /* phone mockup */
+  .phone{ position:relative; width:248px; border-radius:38px; padding:9px; background:linear-gradient(160deg,#1c2c3e,#0c1a2e);
+    box-shadow:0 40px 80px -36px rgba(12,26,46,.7), inset 0 0 0 1px rgba(255,255,255,.06); flex:none }
+  .phone::before{ content:""; position:absolute; top:18px; left:50%; transform:translateX(-50%); width:78px; height:6px; border-radius:99px; background:rgba(255,255,255,.18); z-index:3 }
+  .phone img{ width:100%; border-radius:30px; display:block }
+  .phone-tilt{ transform:rotate(-4deg) } .phone-tilt2{ transform:rotate(3deg) }
+
+  /* app proof */
+  .proof-grid{ display:grid; grid-template-columns:1fr; gap:40px; align-items:center }
+  @media(min-width:880px){ .proof-grid{ grid-template-columns:1.1fr 1fr } }
+  .proof-phones{ display:flex; justify-content:center; gap:-30px; position:relative }
+  .proof-phones .phone:nth-child(2){ margin-left:-70px; margin-top:34px }
+  .proof-copy .big-quote{ font-family:"Cormorant Garamond",serif; font-size:clamp(1.7rem,3.4vw,2.5rem); color:var(--ink); line-height:1.22 }
+  .store-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:24px }
+  .store{ display:inline-flex; align-items:center; gap:.7rem; background:var(--navy); color:#fff; padding:.7rem 1.25rem; border-radius:12px; box-shadow:var(--shadow-sm); transition:transform .18s }
+  .store:hover{ transform:translateY(-2px) }
+  .store .ic{ font-size:1.5rem }
+  .store small{ display:block; font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:#9fb1c4; font-weight:700 }
+  .store b{ font-size:.98rem }
+
+  .prose{ max-width:760px; margin:0 auto }
+  .prose p{ font-size:1.12rem; margin-bottom:1.1rem; color:var(--body) }
+  .prose p.lead{ font-size:1.3rem; color:var(--ink); font-weight:500 }
+  .prose .pull{ font-family:"Cormorant Garamond",serif; font-size:1.7rem; color:var(--gold-deep); border-left:3px solid var(--gold); padding:.2rem 0 .2rem 1.3rem; margin:1.6rem 0; line-height:1.3 }
+  .band-navy .prose p{ color:#cdd8e4 } .band-navy .prose p.lead{ color:#fff } .band-navy .prose .pull{ color:var(--gold-2); border-color:var(--gold) }
+
+  .compare{ max-width:920px; margin:0 auto; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line) }
+  .compare table{ width:100%; border-collapse:collapse; background:var(--card) }
+  .compare th{ font-family:"Plus Jakarta Sans",sans-serif; text-align:left; padding:18px 20px; font-size:.92rem }
+  .compare thead th:first-child{ background:#eef1f4; color:var(--muted); font-weight:600 }
+  .compare thead th:nth-child(2){ background:#3a4956; color:#dfe6ed; font-weight:700 }
+  .compare thead th:last-child{ background:linear-gradient(135deg,var(--navy-3),var(--navy)); color:var(--gold-2); font-weight:800 }
+  .compare td{ padding:15px 20px; border-top:1px solid var(--line-2); font-size:.97rem; vertical-align:top }
+  .compare td:first-child{ color:var(--muted); font-weight:600; background:#fafbfc }
+  .compare td:nth-child(2){ color:var(--body) }
+  .compare td:last-child{ color:var(--ink); font-weight:600; background:rgba(201,162,75,.06) }
+  @media(max-width:620px){ .compare th,.compare td{ padding:12px 12px; font-size:.85rem } }
+
+  .stat-strip{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:rgba(255,255,255,.12); border-radius:var(--radius); overflow:hidden; max-width:920px; margin:0 auto }
+  @media(min-width:760px){ .stat-strip{ grid-template-columns:repeat(4,1fr) } }
+  .stat-strip .c{ background:var(--navy-2); padding:30px 18px; text-align:center }
+  .stat-strip .n{ font-family:"Cormorant Garamond",serif; font-size:2.7rem; font-weight:700; color:var(--gold-2); line-height:1 }
+  .stat-strip .l{ color:#aebfd0; font-size:.85rem; margin-top:8px }
+
+  .eco-grid{ display:grid; grid-template-columns:1fr; gap:18px }
+  @media(min-width:760px){ .eco-grid{ grid-template-columns:1fr 1fr } }
+  .eco{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:26px 24px; box-shadow:var(--shadow-sm); position:relative; overflow:hidden }
+  .eco::before{ content:""; position:absolute; left:0; top:0; width:4px; height:100%; background:linear-gradient(var(--gold-2),var(--gold-deep)) }
+  .eco h3{ font-size:1.5rem; margin-bottom:8px; display:flex; align-items:center; gap:.7rem }
+  .eco h3 .eico{ width:42px; height:42px; border-radius:11px; display:grid; place-items:center; flex:none;
+    background:linear-gradient(150deg,rgba(201,162,75,.16),rgba(201,162,75,.06)); border:1px solid rgba(201,162,75,.3); color:var(--gold-deep) }
+  .eco h3 .eico .ic{ font-size:1.3rem }
+  .eco p{ color:var(--body); font-size:.98rem }
+
+  .paths{ display:grid; grid-template-columns:1fr; gap:20px; max-width:920px; margin:0 auto }
+  @media(min-width:760px){ .paths{ grid-template-columns:1fr 1fr } }
+  .path{ border-radius:var(--radius); padding:30px 28px; border:1px solid var(--line) }
+  .path.gold{ background:linear-gradient(160deg,#fff,#fdf6e7); border-color:rgba(201,162,75,.4); box-shadow:var(--shadow) }
+  .path.blue{ background:#fff; box-shadow:var(--shadow-sm) }
+  .path .tag{ display:inline-flex; align-items:center; gap:.4rem; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:800; color:var(--gold-deep); margin-bottom:10px }
+  .path.blue .tag{ color:var(--blue-deep) }
+  .path h3{ font-size:1.7rem; margin-bottom:10px }
+  .path p{ color:var(--body) }
+  .paths-foot{ text-align:center; font-family:"Cormorant Garamond",serif; font-size:1.7rem; color:var(--ink); margin-top:28px }
+
+  /* mentor */
+  .mentor-card{ display:grid; grid-template-columns:1fr; background:var(--card); border-radius:24px; overflow:hidden; box-shadow:var(--shadow); border:1px solid rgba(201,162,75,.18) }
+  @media(min-width:880px){ .mentor-card{ grid-template-columns:340px 1fr } }
+  .mentor-photo{ position:relative; min-height:320px; background:#0c1a2e }
+  .mentor-photo img{ width:100%; height:100%; object-fit:cover; object-position:70% 30% }
+  .mentor-photo .cap{ position:absolute; left:0; right:0; bottom:0; padding:22px 24px; color:#fff;
+    background:linear-gradient(transparent, rgba(8,16,28,.92)) }
+  .mentor-photo .cap h3{ color:#fff; font-size:1.8rem }
+  .mentor-photo .cap .role{ color:var(--gold-2); font-size:.8rem; letter-spacing:.06em; margin-top:4px; font-weight:600 }
+  .mentor-body{ padding:36px 34px }
+  .mentor-body p{ font-size:1.05rem; margin-bottom:1rem; color:var(--body) }
+  .mentor-body p:first-child::first-letter{ font-family:"Cormorant Garamond",serif; font-size:3.2rem; line-height:.8; float:left; padding:6px 10px 0 0; color:var(--gold-deep) }
+  .media-label{ font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:700; margin-top:6px }
+  .media-row{ display:flex; flex-wrap:wrap; gap:10px; margin:12px 0 24px }
+  .media-chip{ font-size:.78rem; font-weight:700; color:var(--ink); background:#f1f3f6; border:1px solid var(--line); padding:.4rem .9rem; border-radius:8px }
+  .creds{ list-style:none; display:grid; gap:10px }
+  .creds li{ display:flex; gap:10px; align-items:flex-start; font-size:.96rem; color:var(--body) }
+  .creds li .ic{ color:var(--gold-deep); margin-top:3px; font-size:1.05rem }
+
+  /* experience section with phone */
+  .exp-grid{ display:grid; grid-template-columns:1fr; gap:40px; align-items:center }
+  @media(min-width:880px){ .exp-grid{ grid-template-columns:1fr 1fr } }
+  .exp-points{ display:grid; gap:14px }
+
+  .foryou{ display:grid; gap:14px; max-width:820px; margin:0 auto }
+  .foryou .row{ display:flex; gap:14px; align-items:flex-start; background:rgba(255,255,255,.04); border:1px solid rgba(201,162,75,.18); border-radius:14px; padding:18px 20px }
+  .foryou .row .ic{ color:var(--gold-2); flex:none; font-size:1.2rem; margin-top:2px }
+  .foryou .row p{ color:#dce7f2; font-size:1.02rem }
+
+  .reg-wrap{ display:grid; grid-template-columns:1fr; max-width:1000px; margin:0 auto; background:var(--card); border-radius:24px; overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line) }
+  @media(min-width:860px){ .reg-wrap{ grid-template-columns:1fr 1fr } }
+  .reg-side{ background:linear-gradient(165deg,var(--navy-2),var(--navy)); color:#fff; padding:40px 36px; position:relative; overflow:hidden }
+  .reg-side .bgz{ position:absolute; inset:0; background:url('assets/zodiac-bg.jpg') right center/cover no-repeat; opacity:.14 }
+  .reg-side > *{ position:relative; z-index:1 }
+  .reg-side h3{ color:#fff; font-size:2rem }
+  .reg-side .meta{ margin:22px 0; display:grid; gap:12px }
+  .reg-side .meta .m{ display:flex; gap:12px; align-items:center; color:#cdd8e4; font-size:.98rem }
+  .reg-side .meta .m .ico{ width:34px; height:34px; border-radius:9px; background:rgba(201,162,75,.15); border:1px solid rgba(201,162,75,.3); display:grid; place-items:center; flex:none; color:var(--gold-2) }
+  .reg-side .meta .m b{ color:#fff }
+  .exp-label{ font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold-2); font-weight:700 }
+  .exp-list{ list-style:none; margin-top:10px; display:grid; gap:9px }
+  .exp-list li{ display:flex; gap:9px; align-items:center; color:#dce7f2; font-size:.92rem } .exp-list li .ic{ color:var(--gold-2); font-size:1rem; stroke-width:2.2 }
+  .reg-side .note{ margin-top:22px; font-size:.82rem; color:#9fb1c4; border-top:1px solid rgba(255,255,255,.12); padding-top:16px }
+  .reg-form{ padding:40px 36px }
+  .reg-form h4{ font-size:1.5rem; margin-bottom:4px }
+  .reg-form .sub{ color:var(--muted); font-size:.92rem; margin-bottom:22px }
+  .field{ margin-bottom:16px }
+  .field label{ display:block; font-size:.82rem; font-weight:700; color:var(--ink); margin-bottom:6px }
+  .field input,.field select{ width:100%; padding:.85rem 1rem; border:1px solid var(--line); border-radius:11px; font-family:inherit; font-size:1rem; color:var(--ink); background:#fcfdfe; transition:border .15s, box-shadow .15s }
+  .field input:focus,.field select:focus{ outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(201,162,75,.15) }
+  .reg-foot{ text-align:center; font-size:.78rem; color:var(--muted); margin-top:14px }
+  .form-ok{ display:none; align-items:center; gap:.6rem; background:rgba(63,143,110,.1); border:1px solid rgba(63,143,110,.4); color:var(--green); padding:14px 16px; border-radius:11px; font-weight:600; font-size:.95rem; margin-bottom:16px }
+  .form-ok .ic{ font-size:1.2rem; stroke-width:2.4 }
+
+  .closer{ text-align:center; padding:84px 0; position:relative; overflow:hidden }
+  .closer .bgz{ position:absolute; inset:0; background:url('assets/zodiac-bg.jpg') center/cover no-repeat; opacity:.16 }
+  .closer > *{ position:relative; z-index:1 }
+  .closer .q{ font-family:"Cormorant Garamond",serif; font-style:italic; font-size:clamp(2rem,5vw,3.4rem); color:#fff; max-width:18ch; margin:0 auto; line-height:1.2 }
+  .closer .by{ color:var(--gold-2); margin-top:18px; letter-spacing:.1em; font-size:.9rem; text-transform:uppercase; font-weight:600 }
+
+  footer{ background:#081320; color:#7e8fa1; padding:34px 0; text-align:center; font-size:.85rem }
+  footer .brand{ justify-content:center; margin-bottom:10px }
+
+  .sticky-cta{ position:fixed; left:0; right:0; bottom:0; z-index:70; background:rgba(12,26,46,.96); backdrop-filter:blur(10px); border-top:1px solid rgba(201,162,75,.25); padding:10px 16px; display:flex; gap:12px; align-items:center; justify-content:space-between; transform:translateY(120%); transition:transform .3s ease }
+  .sticky-cta.show{ transform:translateY(0) }
+  .sticky-cta .info{ color:#fff; font-size:.82rem; line-height:1.25 } .sticky-cta .info b{ color:var(--gold-2) }
+  .sticky-cta .btn{ padding:.7rem 1.3rem; font-size:.85rem; white-space:nowrap }
+  @media(min-width:760px){ .sticky-cta{ display:none } }
+  @media(max-width:760px){ body{ padding-bottom:70px } }
+
+  .anim{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease }
+  .anim.in{ opacity:1; transform:none }
+  @media (prefers-reduced-motion:reduce){ .anim{ opacity:1; transform:none; transition:none } *{ animation:none !important } }
+</style>
+</head>
+<body>
+
+<!-- ===== SVG ICON SPRITE ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.5 2.1"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2.5" y="6" width="13" height="12" rx="2.5"/><path d="M15.5 10.2 21.5 7v10l-6-3.2"/></symbol>
+  <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M4 7.5h16v3a2 2 0 0 0 0 4v3H4v-3a2 2 0 0 0 0-4v-3Z"/><path d="M13 7.5v9" stroke-dasharray="1.6 2.2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5 10-11"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5c.7 5 2 7.6 8 9.5-6 1.9-7.3 4.5-8 9.5-.7-5-2-7.6-8-9.5 6-1.9 7.3-4.5 8-9.5Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" class="ic-fill"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4 13.4 13.4 8.4 15.6 10.6 10.6 15.6 8.4Z"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M12 4 2.5 9 12 14l9.5-5L12 4Z"/><path d="M6 11.2V16c0 1.1 2.7 2.5 6 2.5s6-1.4 6-2.5v-4.8"/><path d="M21.5 9.2v5"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6.8v10.4M9.4 9c0-1.1 1.1-1.8 2.6-1.8s2.6.8 2.6 1.9c0 2.4-5.1 1.4-5.1 3.7 0 1.1 1.1 1.9 2.6 1.9s2.6-.7 2.6-1.7"/></symbol>
+  <symbol id="i-apple" viewBox="0 0 24 24"><path class="ic-fill" d="M17.05 12.04c-.03-2.4 1.96-3.55 2.05-3.61-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.91-.85-3.14-.83-1.61.02-3.1.94-3.93 2.39-1.68 2.91-.43 7.22 1.2 9.58.8 1.16 1.75 2.46 3 2.41 1.21-.05 1.66-.78 3.12-.78 1.46 0 1.87.78 3.14.75 1.3-.02 2.12-1.18 2.91-2.34.92-1.34 1.3-2.64 1.32-2.71-.03-.01-2.53-.97-2.56-3.84M14.62 4.9c.66-.8 1.11-1.92.99-3.03-.96.04-2.12.64-2.8 1.44-.61.71-1.15 1.84-1 2.93 1.07.08 2.16-.55 2.81-1.34"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path class="ic-fill" d="M4 3.3v17.4c0 .5.55.83 1 .57l14.5-8.7a.66.66 0 0 0 0-1.14L5 2.73c-.45-.27-1 .07-1 .57Z"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3.5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M20 20H4M8 16v-4M12 16V8M16 16v-6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></symbol>
+</svg>
+
+<!-- ===== TOP BAR ===== -->
+<header class="topbar">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="mark"><svg class="ic"><use href="#i-spark"/></svg></span> Astro Coach</a>
+    <div class="nav-meta">
+      <span><svg class="ic"><use href="#i-cal"/></svg> <b>11 June</b>, 7 PM IST</span>
+      <span><svg class="ic"><use href="#i-ticket"/></svg> <b>100 seats</b> only</span>
+    </div>
+    <a href="#register" class="btn btn-gold">Reserve Free Seat</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="bg-zodiac"></div>
+  <div class="glow"></div>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="top-flag"><span class="flag"><svg class="ic"><use href="#i-spark"/></svg> For the first time in India</span></div>
+
+    <h1>Learn Positive Astrology. <em>Change Lives.</em> Get Paid For It.</h1>
+    <p class="lede">Become an <b>International Astro Coach</b> in just <b>9 weeks</b> — a free live masterclass that closes the gap between knowing astrology and building a real, financially rewarding career from it.</p>
+
+    <div class="byline">
+      <img class="pic" src="assets/puneet-hero.jpg" alt="Puneet Nahata" />
+      <span>From <b>Puneet Nahata</b> <span class="dot">•</span> Creator of Astro Profile <span class="dot">•</span> Founder of the Astro Coach App</span>
+    </div>
+
+    <div class="hero-stats">
+      <div class="st"><div class="num">20,000+</div><div class="lbl">Consultations</div></div>
+      <div class="st"><div class="num">5,000+</div><div class="lbl">Students</div></div>
+      <div class="st"><div class="num">200,000+</div><div class="lbl">App Users</div></div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#register" class="btn btn-gold">Secure My Seat in the Masterclass <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <div class="btn-sub">Complimentary access • Limited to 100 participants</div>
+    </div>
+
+    <div class="panel">
+      <div class="cd-title">Live Masterclass Begins In</div>
+      <div class="countdown" id="countdown">
+        <div class="cd-box"><div class="v" id="cd-d">00</div><div class="k">Days</div></div>
+        <div class="cd-box"><div class="v" id="cd-h">00</div><div class="k">Hours</div></div>
+        <div class="cd-box"><div class="v" id="cd-m">00</div><div class="k">Minutes</div></div>
+        <div class="cd-box"><div class="v" id="cd-s">00</div><div class="k">Seconds</div></div>
+      </div>
+      <div class="detail-grid">
+        <div class="detail"><svg class="ic"><use href="#i-cal"/></svg><div class="dk">Date</div><div class="dv">11 June 2025</div><div class="ds">Wednesday</div></div>
+        <div class="detail"><svg class="ic"><use href="#i-clock"/></svg><div class="dk">Time</div><div class="dv">7:00 PM IST</div><div class="ds">90 Minutes</div></div>
+        <div class="detail"><svg class="ic"><use href="#i-video"/></svg><div class="dk">Platform</div><div class="dv">Zoom</div><div class="ds">Live &amp; Interactive</div></div>
+        <div class="detail"><svg class="ic"><use href="#i-ticket"/></svg><div class="dk">Seats Left</div><div class="dv">100 Only</div><div class="ds">Filling Fast</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT YOU'LL LEARN ===== -->
+<section class="sec-pad band-paper">
+  <div class="wrap">
+    <div class="sec-head anim">
+      <span class="eyebrow center">In this masterclass</span>
+      <h2>What You Will Walk Away Able To Do</h2>
+      <p>This is not theory. It is the exact system behind 20,000+ professional consultations — distilled into one live session.</p>
+    </div>
+    <div class="learn-grid">
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Conduct professional astrology consultations</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Understand psychology &amp; human behaviour</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Coach clients through real-life challenges</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Create transformation, not just predictions</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Build a meaningful &amp; financially rewarding career</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Work with Indian &amp; international clients</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Become eligible for placement inside the Astro Coach ecosystem</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Use Astro Profile &amp; Astro Programs in real consultations</p></div>
+    </div>
+    <div style="text-align:center;margin-top:36px" class="anim">
+      <a href="#register" class="btn btn-gold">Secure My Seat in the Masterclass</a>
+      <div class="btn-sub" style="color:var(--muted)">Complimentary access • Limited to 100 participants</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APP PROOF (real screens) ===== -->
+<section class="sec-pad band-sand">
+  <div class="wrap">
+    <div class="proof-grid">
+      <div class="proof-phones anim">
+        <div class="phone phone-tilt"><img src="assets/app-home.jpg" alt="Astro Coach app — daily predictions &amp; energy" loading="lazy" /></div>
+        <div class="phone phone-tilt2"><img src="assets/app-programs.jpg" alt="Astro Coach app — Astro Program progress" loading="lazy" /></div>
+      </div>
+      <div class="proof-copy anim">
+        <span class="eyebrow">Don't take it on faith</span>
+        <p class="big-quote" style="margin-top:16px">200,000+ users didn't join on faith. They experienced an Astro Program — then decided. You should do the same.</p>
+        <div class="store-row">
+          <a href="#" class="store"><svg class="ic"><use href="#i-apple"/></svg><span><small>Download on the</small><b>App Store</b></span></a>
+          <a href="#" class="store"><svg class="ic"><use href="#i-play"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+        </div>
+        <p style="margin-top:18px;color:var(--muted);font-size:.92rem">200,000+ users worldwide. Decide for yourself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE GAP ===== -->
+<section class="sec-pad band-paper">
+  <div class="wrap">
+    <div class="sec-head anim">
+      <span class="eyebrow center">The gap nobody talks about</span>
+      <h2>You Can Study Astrology For Years — And Still Not Earn From It</h2>
+    </div>
+    <div class="prose anim">
+      <p class="lead">You can study astrology for 5 years. Learn hundreds of yogas. Memorise thousands of combinations. And still not know how to conduct a single professional consultation — or earn a single rupee from it.</p>
+      <p class="pull">We are not creating astrologers. We are creating Astro Coaches.</p>
+      <p>Most astrology schools teach astrology. We teach professional consultation, transformation, and career building — how to open a professional session, how to guide someone through a real problem, how to give them direction rather than just information, and how to structure a transformation over months, not minutes.</p>
+      <p>That missing piece is exactly what this masterclass was built to fill.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY EARN MORE ===== -->
+<section class="sec-pad band-sand">
+  <div class="wrap">
+    <div class="sec-head anim">
+      <span class="eyebrow center">Why Astro Coaches earn more</span>
+      <h2>The Difference Is Not Just Impact. It Is Income.</h2>
+      <p>A traditional astrologer is paid to answer a question — “Will I get married?”, “When will my business improve?” The session ends, the client leaves. An Astro Coach builds a journey.</p>
+    </div>
+    <div class="compare anim">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>Traditional Astrologer</th><th>Professional Astro Coach</th></tr></thead>
+        <tbody>
+          <tr><td>Scope</td><td>Answers one question</td><td>Guides a complete transformation journey</td></tr>
+          <tr><td>Format</td><td>Single session</td><td>Multiple sessions over weeks or months</td></tr>
+          <tr><td>Payment</td><td>One-time payment</td><td>Long-term client relationship</td></tr>
+          <tr><td>Focus</td><td>Prediction-focused</td><td>Solution-focused</td></tr>
+          <tr><td>Clients</td><td>Constantly searching for new ones</td><td>Higher retention &amp; repeat clients</td></tr>
+          <tr><td>Outcome</td><td>Transaction</td><td>Transformation</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center;max-width:60ch;margin:28px auto 0;color:var(--body);font-size:1.05rem" class="anim">More impact. Better results. Longer relationships. More predictable income. <b style="color:var(--ink)">That is the Astro Coach difference.</b></p>
+  </div>
+</section>
+
+<!-- ===== NUMBERS ===== -->
+<section class="sec-pad band-navy">
+  <div class="wrap">
+    <div class="sec-head on-dark anim">
+      <span class="eyebrow center on-dark">The numbers behind the system</span>
+      <h2>20 Years. One System That Works.</h2>
+    </div>
+    <div class="stat-strip anim">
+      <div class="c"><div class="n">200,000+</div><div class="l">App users worldwide</div></div>
+      <div class="c"><div class="n">20,000+</div><div class="l">Personal consultations</div></div>
+      <div class="c"><div class="n">5,000+</div><div class="l">International students</div></div>
+      <div class="c"><div class="n">20 yrs</div><div class="l">Building this system</div></div>
+    </div>
+    <p style="text-align:center;max-width:62ch;margin:28px auto 0;color:#aebfd0" class="anim">These are not projections. They are the result of 20 years of building, teaching, and refining a system that works — across Russia, Europe, and internationally.</p>
+  </div>
+</section>
+
+<!-- ===== ECOSYSTEM ===== -->
+<section class="sec-pad band-paper">
+  <div class="wrap">
+    <div class="sec-head anim">
+      <span class="eyebrow center">You are not joining a course</span>
+      <h2>You Are Entering A Complete Ecosystem</h2>
+      <p>Most competitors have a course. You are joining something far bigger.</p>
+    </div>
+    <div class="eco-grid">
+      <div class="eco anim"><h3><span class="eico"><svg class="ic"><use href="#i-spark"/></svg></span> Astro Profile System</h3><p>Puneet's proprietary framework — 20 years in development, proven across 20,000+ personal consultations.</p></div>
+      <div class="eco anim"><h3><span class="eico"><svg class="ic"><use href="#i-phone"/></svg></span> Astro Coach App</h3><p>200,000+ users — the majority international, from Russia, Europe and beyond. Qualified coaches can be paid in foreign currency, including dollars and euros.</p></div>
+      <div class="eco anim"><h3><span class="eico"><svg class="ic"><use href="#i-target"/></svg></span> Placement Opportunity</h3><p>Qualified graduates may be invited into the international Astro Coach ecosystem — an immediate client base, ready and waiting.</p></div>
+      <div class="eco anim"><h3><span class="eico"><svg class="ic"><use href="#i-compass"/></svg></span> Astro Program</h3><p>A complete psychological framework for deep client work — structured transformation, not one-off readings.</p></div>
+      <div class="eco anim"><h3><span class="eico"><svg class="ic"><use href="#i-cap"/></svg></span> Puneet's Personal Assessment</h3><p>Your certification is conducted personally by the founder — every graduate carries his standard.</p></div>
+      <div class="eco anim" style="background:linear-gradient(160deg,#fff,#fdf6e7);border-color:rgba(201,162,75,.4)"><h3><span class="eico"><svg class="ic"><use href="#i-coin"/></svg></span> Real Income</h3><p>Many successful coaches on the platform earn <b style="color:var(--gold-deep)">₹1,00,000+ per month</b> — and international clients mean you can earn in dollars and euros, not just rupees.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE IT (phone) ===== -->
+<section class="sec-pad band-sand">
+  <div class="wrap">
+    <div class="exp-grid">
+      <div class="anim" style="display:flex;justify-content:center">
+        <div class="phone"><img src="assets/app-profile.jpg" alt="Astro Coach app — your personal Jyotish natal chart" loading="lazy" /></div>
+      </div>
+      <div class="anim">
+        <span class="eyebrow">Experience it before you decide</span>
+        <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin-top:12px">See Astrology Produce A Structured Transformation</h2>
+        <p style="margin:14px 0 24px;color:var(--body);font-size:1.08rem">Most people have never seen astrology work as a process. Before joining, experience one for yourself.</p>
+        <div class="exp-points">
+          <div class="learn-item"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Daily practices and self-development frameworks</p></div>
+          <div class="learn-item"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Psychology applied through your personal Jyotish chart</p></div>
+          <div class="learn-item"><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span><p>Structured transformation — not predictions, not vague advice</p></div>
+        </div>
+        <div style="margin-top:26px">
+          <a href="#" class="btn btn-light" style="border:1px solid var(--gold)">See an Astro Program <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <p style="margin-top:14px;color:var(--muted);font-size:.92rem">Once you experience this, you will immediately understand: this is not ordinary astrology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TWO PATHS ===== -->
+<section class="sec-pad band-paper">
+  <div class="wrap">
+    <div class="sec-head anim">
+      <span class="eyebrow center">Two paths. Both lead to a career.</span>
+      <h2>There Is No Losing Scenario</h2>
+    </div>
+    <div class="paths">
+      <div class="path gold anim">
+        <span class="tag"><svg class="ic"><use href="#i-spark"/></svg> Meet Puneet's standard</span>
+        <h3>Placement Opportunity</h3>
+        <p>Step into the international Astro Coach ecosystem with 200,000+ active users — many of them international, paying in foreign currency.</p>
+      </div>
+      <div class="path blue anim">
+        <span class="tag"><svg class="ic"><use href="#i-arrow"/></svg> Still building</span>
+        <h3>Fully Equipped Either Way</h3>
+        <p>You leave ready to build your career on Indian platforms immediately. The knowledge, the system, and the certification are yours regardless.</p>
+      </div>
+    </div>
+    <p class="paths-foot anim">Either way — you leave with a career.</p>
+  </div>
+</section>
+
+<!-- ===== OLD VS NEW ===== -->
+<section class="sec-pad band-sand">
+  <div class="wrap">
+    <div class="sec-head anim">
+      <span class="eyebrow center">The old way vs. the new standard</span>
+      <h2>A New Profession, Defined</h2>
+    </div>
+    <div class="compare anim">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>Traditional Astrologer</th><th>Professional Astro Coach</th></tr></thead>
+        <tbody>
+          <tr><td>The approach</td><td>Prediction only</td><td>Predictive + Psychological + Solution-oriented</td></tr>
+          <tr><td>The impact</td><td>Temporary answers</td><td>Long-term transformation</td></tr>
+          <tr><td>Client base</td><td>One-off local clients</td><td>Retained local &amp; international clients</td></tr>
+          <tr><td>Income</td><td>Unpredictable fees</td><td>Stable retainers &amp; financial freedom</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="text-align:center;margin-top:34px" class="anim">
+      <a href="#register" class="btn btn-gold">I'm Ready — Claim My Place</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENTOR ===== -->
+<section class="sec-pad band-navy">
+  <div class="wrap">
+    <div class="sec-head on-dark anim">
+      <span class="eyebrow center on-dark">Your mentor</span>
+      <h2>Puneet Nahata</h2>
+      <p>Celebrity Astrologer • Founder of Astro-Psychology • Lead Mentor</p>
+    </div>
+    <div class="mentor-card anim">
+      <div class="mentor-photo">
+        <img src="assets/puneet-hero.jpg" alt="Puneet Nahata — Founder of Astro-Psychology" loading="lazy" />
+        <div class="cap"><h3>Puneet Nahata</h3><div class="role">Founder of Astro-Psychology</div></div>
+      </div>
+      <div class="mentor-body">
+        <p>I spent almost half my life in the West — and what surprised me most was this: in almost 80 years since Freud, not a single astrologer had built a demonstrable system showing the depth of Jyotish in understanding the human mind and behaviour.</p>
+        <p>So I built one. Over 20 years, I developed an Astro-Psychology framework that people could study, apply, and test for themselves. It found success across Russia and Europe — trusted by celebrities, politicians, and business leaders. I became one of the most recognised astrologers in Russia, with regular appearances on national television.</p>
+        <p>Now I am bringing it home. My dream: <b style="color:var(--gold-deep)">10,000 Astro Coaches across India</b> — each one carrying this science forward, building their own career, and transforming lives from anywhere in the world.</p>
+        <div class="media-label">As seen on</div>
+        <div class="media-row">
+          <span class="media-chip">Channel One</span><span class="media-chip">Russia 1</span><span class="media-chip">REN TV</span>
+          <span class="media-chip">TASS</span><span class="media-chip">RBC</span><span class="media-chip">Kommersant</span>
+        </div>
+        <ul class="creds">
+          <li><svg class="ic"><use href="#i-spark"/></svg> 20,000+ personal consultations across Russia, Europe and internationally</li>
+          <li><svg class="ic"><use href="#i-spark"/></svg> 5,000+ students trained — one of the largest Jyotish communities outside India</li>
+          <li><svg class="ic"><use href="#i-spark"/></svg> 200,000+ users on the Astro Coach platform, majority international</li>
+          <li><svg class="ic"><use href="#i-spark"/></svg> Recognised authority on Russian national television and international media</li>
+          <li><svg class="ic"><use href="#i-spark"/></svg> Trusted advisor to celebrities, politicians and Forbes-listed business leaders</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY NOW ===== -->
+<section class="sec-pad band-paper">
+  <div class="wrap">
+    <div class="sec-head anim">
+      <span class="eyebrow center">Why Astro Coaches are needed right now</span>
+      <h2>AI Is Replacing Prediction. It Cannot Replace Transformation.</h2>
+    </div>
+    <div class="prose anim">
+      <p class="lead">The future belongs to people who create transformation — not those who simply provide information.</p>
+      <p>Anyone can get a basic chart reading in seconds. What AI cannot do is sit with a human being, understand their fears, and guide them toward a better decision.</p>
+    </div>
+    <div class="learn-grid" style="max-width:880px;margin:34px auto 0">
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-arrow"/></svg></span><p>AI is commoditising information — human transformation is becoming more valuable, not less</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-arrow"/></svg></span><p>Modern clients don't want anxiety-inducing predictions — they want structured solutions</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-arrow"/></svg></span><p>Demand for professional coaches is growing globally — astrology remains untapped as a methodology</p></div>
+      <div class="learn-item anim"><span class="ck"><svg class="ic"><use href="#i-arrow"/></svg></span><p>The platform already has 200,000+ users — mostly international — seeking qualified coaches</p></div>
+    </div>
+    <p class="pull anim" style="max-width:760px;margin:32px auto 0">The coaches who establish themselves in the next 2 years will define this profession for the next 20.</p>
+  </div>
+</section>
+
+<!-- ===== FOR YOU IF ===== -->
+<section class="sec-pad band-navy">
+  <div class="wrap">
+    <div class="sec-head on-dark anim">
+      <span class="eyebrow center on-dark">This masterclass is for you if</span>
+      <h2>You Already Sense The Gap</h2>
+      <p>This masterclass is where it closes.</p>
+    </div>
+    <div class="foryou">
+      <div class="row anim"><svg class="ic"><use href="#i-spark"/></svg><p>You have studied astrology — but never structured it into a professional consultation</p></div>
+      <div class="row anim"><svg class="ic"><use href="#i-spark"/></svg><p>You want to earn from astrology — not occasionally, but predictably and professionally</p></div>
+      <div class="row anim"><svg class="ic"><use href="#i-spark"/></svg><p>You believe astrology can go deeper than predictions — and want a system that proves it</p></div>
+      <div class="row anim"><svg class="ic"><use href="#i-spark"/></svg><p>You are a coach, counsellor or therapist who wants to add the depth of Jyotish to your practice</p></div>
+      <div class="row anim"><svg class="ic"><use href="#i-spark"/></svg><p>You want to work with Indian &amp; international clients — and build something truly yours</p></div>
+    </div>
+    <p style="text-align:center;color:#aebfd0;margin-top:26px" class="anim">No prior experience required. If the gap resonates — you are exactly who this was built for.</p>
+  </div>
+</section>
+
+<!-- ===== REGISTRATION ===== -->
+<section class="sec-pad band-sand" id="register">
+  <div class="wrap">
+    <div class="sec-head anim">
+      <span class="eyebrow center">Reserve your seat</span>
+      <h2>11 June. 100 Seats. One Chance To Attend Live.</h2>
+      <p>Fill in your details below. Your Zoom link will be sent 24 hours before the session.</p>
+    </div>
+
+    <div class="reg-wrap anim">
+      <div class="reg-side">
+        <div class="bgz"></div>
+        <h3>The Masterclass</h3>
+        <div class="meta">
+          <div class="m"><span class="ico"><svg class="ic"><use href="#i-cal"/></svg></span><span>Wednesday, <b>11 June 2025</b></span></div>
+          <div class="m"><span class="ico"><svg class="ic"><use href="#i-clock"/></svg></span><span><b>7:00 PM IST</b> • 90 Minutes</span></div>
+          <div class="m"><span class="ico"><svg class="ic"><use href="#i-video"/></svg></span><span>Live on <b>Zoom</b> • Interactive</span></div>
+          <div class="m"><span class="ico"><svg class="ic"><use href="#i-ticket"/></svg></span><span><b>100 seats</b> only • Complimentary</span></div>
+        </div>
+        <div class="exp-label">What you will experience</div>
+        <ul class="exp-list">
+          <li><svg class="ic"><use href="#i-mic"/></svg> Live consultation demonstration</li>
+          <li><svg class="ic"><use href="#i-chart"/></svg> Live chart reading from the audience</li>
+          <li><svg class="ic"><use href="#i-coin"/></svg> Income model of a professional Astro Coach</li>
+          <li><svg class="ic"><use href="#i-spark"/></svg> Open Q&amp;A with Puneet Nahata</li>
+        </ul>
+        <p class="note">Zoom link sent 24 hrs before the session. No replay — attend live.</p>
+      </div>
+
+      <div class="reg-form">
+        <div class="form-ok" id="formOk"><svg class="ic"><use href="#i-check"/></svg> Your seat is reserved! Check your email — your Zoom link arrives 24 hours before the session.</div>
+        <h4>Reserve My Seat</h4>
+        <p class="sub">Complimentary access • Limited to 100 participants</p>
+        <form id="regForm" novalidate>
+          <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" placeholder="Your full name" required /></div>
+          <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@email.com" required /></div>
+          <div class="field"><label for="wa">WhatsApp Number</label><input id="wa" name="wa" type="tel" placeholder="+91 ..." required /></div>
+          <div class="field"><label for="city">City / Country</label><input id="city" name="city" type="text" placeholder="e.g. Mumbai, India" required /></div>
+          <div class="field"><label for="bg">Your Background in Astrology</label>
+            <select id="bg" name="bg" required>
+              <option value="" disabled selected>Select one…</option>
+              <option>Beginner</option><option>Intermediate</option><option>Practising</option><option>Professional</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">Yes — Reserve My Seat on 11 June <svg class="ic"><use href="#i-arrow"/></svg></button>
+          <p class="reg-foot">Complimentary • 100 seats only • Zoom link sent to your email</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLOSER ===== -->
+<section class="band-navy">
+  <div class="wrap closer">
+    <div class="bgz"></div>
+    <p class="q">“Your chart is not your ceiling.”</p>
+    <p class="by">— Puneet Nahata</p>
+    <div style="margin-top:30px"><a href="#register" class="btn btn-gold">Join the Masterclass — Complimentary Access</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="color:#fff"><span class="mark"><svg class="ic"><use href="#i-spark"/></svg></span> Astro Coach</div>
+    <p>Become an International Astro Coach in 9 Weeks • Free Live Masterclass with Puneet Nahata</p>
+    <p style="margin-top:8px;font-size:.78rem">© 2025 Astro Coach. All rights reserved. This is an educational masterclass; outcomes vary by individual effort.</p>
+  </div>
+</footer>
+
+<!-- ===== STICKY MOBILE CTA ===== -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="info"><b>11 June, 7 PM IST</b><br>Free • 100 seats only</div>
+  <a href="#register" class="btn btn-gold">Reserve Seat</a>
+</div>
+
+<script>
+  (function(){ var s=document.getElementById('stars'); if(!s) return; var n=70,h='';
+    for(var i=0;i<n;i++){ var sz=(Math.random()*2+0.5).toFixed(1);
+      h+='<i style="left:'+(Math.random()*100).toFixed(2)+'%;top:'+(Math.random()*100).toFixed(2)+'%;width:'+sz+'px;height:'+sz+'px;animation-delay:'+(Math.random()*4).toFixed(2)+'s"></i>'; }
+    s.innerHTML=h; })();
+
+  /* countdown — set EVENT_ISO to your webinar date/time. 19:00 IST = 13:30 UTC.
+     If the date has already passed it auto-rolls to next year so the timer never sits dead. */
+  (function(){
+    var EVENT_ISO='2025-06-11T13:30:00Z';
+    var target=new Date(EVENT_ISO).getTime(), now=Date.now();
+    while(target < now){ var t=new Date(target); t.setUTCFullYear(t.getUTCFullYear()+1); target=t.getTime(); }
+    var d=document.getElementById('cd-d'),h=document.getElementById('cd-h'),m=document.getElementById('cd-m'),s=document.getElementById('cd-s'),box=document.getElementById('countdown');
+    function pad(x){return String(x).padStart(2,'0');}
+    function tick(){ var diff=target-Date.now();
+      if(diff<=0){ box.innerHTML='<div class="cd-box" style="min-width:auto"><div class="v" style="padding:.45rem 1.4rem">Doors Are Open — Join Live Now</div></div>'; clearInterval(iv); return; }
+      d.textContent=pad(Math.floor(diff/86400000)); h.textContent=pad(Math.floor(diff%86400000/3600000));
+      m.textContent=pad(Math.floor(diff%3600000/60000)); s.textContent=pad(Math.floor(diff%60000/1000)); }
+    tick(); var iv=setInterval(tick,1000);
+  })();
+
+  (function(){ var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{threshold:.12});
+    document.querySelectorAll('.anim').forEach(function(el){ io.observe(el); }); })();
+
+  (function(){ var cta=document.getElementById('stickyCta'), hero=document.querySelector('.hero');
+    window.addEventListener('scroll',function(){ if(window.scrollY > hero.offsetHeight*0.8){ cta.classList.add('show'); } else { cta.classList.remove('show'); } },{passive:true}); })();
+
+  (function(){ var f=document.getElementById('regForm'), ok=document.getElementById('formOk');
+    f.addEventListener('submit',function(e){ e.preventDefault(); if(!f.checkValidity()){ f.reportValidity(); return; }
+      ok.style.display='flex'; f.reset(); ok.scrollIntoView({behavior:'smooth',block:'center'}); }); })();
+</script>
+</body>
+</html>
