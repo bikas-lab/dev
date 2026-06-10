@@ -656,9 +656,11 @@
 
       <div class="reg-form">
         <div class="form-ok" id="formOk"><svg class="ic"><use href="#i-check"/></svg> Your seat is reserved! Check your email — your Zoom link arrives 24 hours before the session.</div>
+        <div class="form-err" id="formErr" style="display:none;align-items:center;gap:.6rem;background:rgba(194,90,77,.1);border:1px solid rgba(194,90,77,.4);color:#c25a4d;padding:14px 16px;border-radius:11px;font-weight:600;font-size:.92rem;margin-bottom:16px">Something went wrong. Please email us at wisdom@astrocoachindia.com</div>
         <h4>Reserve My Seat</h4>
         <p class="sub">Complimentary access • Limited to 100 participants</p>
         <form id="regForm" novalidate>
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
           <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" placeholder="Your full name" required /></div>
           <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@email.com" required /></div>
           <div class="field"><label for="wa">WhatsApp Number</label><input id="wa" name="wa" type="tel" placeholder="+91 ..." required /></div>
@@ -728,9 +730,41 @@
   (function(){ var cta=document.getElementById('stickyCta'), hero=document.querySelector('.hero');
     window.addEventListener('scroll',function(){ if(window.scrollY > hero.offsetHeight*0.8){ cta.classList.add('show'); } else { cta.classList.remove('show'); } },{passive:true}); })();
 
-  (function(){ var f=document.getElementById('regForm'), ok=document.getElementById('formOk');
-    f.addEventListener('submit',function(e){ e.preventDefault(); if(!f.checkValidity()){ f.reportValidity(); return; }
-      ok.style.display='flex'; f.reset(); ok.scrollIntoView({behavior:'smooth',block:'center'}); }); })();
+  /* Form delivery — every submission is emailed to BOTH inboxes (primary + cc) and
+     stored in the FormSubmit inbox. No backend required; works on any static host.
+     NOTE: the first ever submission triggers a one-time activation email to
+     wisdom@astrocoachindia.com — open it and click "Activate Form" once. */
+  (function(){
+    var f=document.getElementById('regForm'), ok=document.getElementById('formOk'), err=document.getElementById('formErr');
+    var btn=f.querySelector('button[type="submit"]');
+    var ENDPOINT='https://formsubmit.co/ajax/wisdom@astrocoachindia.com';
+    function show(el){ ok.style.display='none'; err.style.display='none'; el.style.display='flex'; el.scrollIntoView({behavior:'smooth',block:'center'}); }
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!f.checkValidity()){ f.reportValidity(); return; }
+      var orig=btn.innerHTML; btn.disabled=true; btn.style.opacity='.7'; btn.textContent='Reserving your seat…';
+      var payload={
+        "Full Name": document.getElementById('name').value,
+        "Email": document.getElementById('email').value,
+        "WhatsApp": document.getElementById('wa').value,
+        "City / Country": document.getElementById('city').value,
+        "Astrology Background": document.getElementById('bg').value,
+        _subject: "New masterclass registration — "+document.getElementById('name').value,
+        _cc: "assistant@astrocoachindia.com",
+        _template: "table",
+        _captcha: "false",
+        _honey: f.querySelector('[name="_honey"]').value
+      };
+      fetch(ENDPOINT,{ method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body:JSON.stringify(payload) })
+        .then(function(r){ return r.json().catch(function(){ return {success:r.ok}; }); })
+        .then(function(res){
+          var okay = res && (res.success===true || res.success==='true' || res.success===undefined);
+          if(okay){ f.reset(); show(ok); } else { show(err); }
+        })
+        .catch(function(){ show(err); })
+        .finally(function(){ btn.disabled=false; btn.style.opacity=''; btn.innerHTML=orig; });
+    });
+  })();
 </script>
 </body>
 </html>
